@@ -1,0 +1,18 @@
+--- nodejs-db-mysql-0.7.6/db-mysql.js~	2011-11-17 21:14:10.000000000 +0200
++++ nodejs-db-mysql-0.7.6/db-mysql.js	2012-01-26 18:23:32.000000000 +0200
+@@ -13,9 +13,13 @@
+     binding;
+ 
+ try {
+-    binding = require("./build/default/mysql_bindings");
++    binding = require("./mysql_bindings");
+ } catch(error) {
+-    binding = require("./build/Release/mysql_bindings");
++	try {
++		binding = require("./build/default/mysql_bindings");
++	} catch(error) {
++		binding = require("./build/Release/mysql_bindings");
++	}
+ }
+ 
+ function extend(target, source) {
