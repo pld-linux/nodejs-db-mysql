@@ -12,7 +12,6 @@ Patch0:		library-path.patch
 BuildRequires:	mysql-devel
 BuildRequires:	nodejs-devel
 BuildRequires:	rpmbuild(macros) >= 1.634
-BuildRequires:	v8-devel
 Requires:	nodejs
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
