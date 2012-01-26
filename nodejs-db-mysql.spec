@@ -10,7 +10,7 @@ Source0:	http://registry.npmjs.org/db-mysql/-/%{pkg}-%{version}.tgz
 # Source0-md5:	1960ced1589fe901697472db2898d58d
 Patch0:		library-path.patch
 BuildRequires:	mysql-devel
-BuildRequires:	nodejs-waf
+BuildRequires:	nodejs-devel
 BuildRequires:	rpmbuild(macros) >= 1.634
 BuildRequires:	v8-devel
 Requires:	nodejs
