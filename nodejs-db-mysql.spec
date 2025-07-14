@@ -23,7 +23,7 @@ Node.js bindings to relational databases: MySQL database binding.
 %prep
 %setup -qc
 mv package/* .
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 NODE_PATH=%{nodejs_libdir}/%{pkg} \
